@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  babackground-color: violet ;
+}
+
+main.subs-container {
+  background: white; 
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.subs-form {
+}
+
+.subs-form-img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.subs-form article {
+    padding: 2rem;
+}
+.subs-form-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.subs-form-p {
+  margin-bottom: 1rem;
+  color: hsl(235, 18%, 26%);
+}
+.subs-form-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.subs-form-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: hsl(235, 18%, 26%);
+}
+
+.subs-form-list img {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+.subs-form-input {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.subs-form-input label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.subs-form-input input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 58%);
+  outline: none;
+}
+
+.subs-form-input input:focus {
+  border-color: hsl(4, 100%, 67%);
+}
+
+
+.subs-form-input input.error {
+  border-color: hsl(4, 100%, 67%);
+  background: hsla(4, 100%, 67%, 0.1);
+  color: hsl(4, 100%, 67%);
+}
+
+.error-message {
+  color: hsl(4, 100%, 67%);
+  font-size: 0.8rem;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: hsl(4, 100%, 67%);
+}
+
+.subs-success {
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center ; /* spreads content top-to-bottom */
+  height: 100vh; /* or auto if you don’t want full screen */
+}
+
+.subs-success button {
+  position: static;  /* remove fixed */
+  margin-top: 2rem;  /* space it away from text */
+}
+
+.subs-success h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: hsl(234, 29%, 20%);
+}
+
+.icon {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+  
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    background: hsl(4, 100%, 67%);
+    color: white;
+    width: 100%;
+}
+.attribution a { color: hsl(234, 29%, 20%); }

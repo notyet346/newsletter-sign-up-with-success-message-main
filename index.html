@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Sign-Up</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <main class="subs-container">
+    <!-- Signup form -->
+    <form class="subs-form" id="newsletter-form" novalidate>
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="subs-form-img">
+
+      <article>
+        <h2 class="subs-form-h2">Stay updated!</h2>
+        <p class="subs-form-p">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="subs-form-list">
+          <li><img src="./assets/images/icon-list.svg" alt=""> Product discovery and building what matters</li>
+          <li><img src="./assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>
+          <li><img src="./assets/images/icon-list.svg" alt=""> And much more!</li>
+        </ul>
+
+        <div class="subs-form-input">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="email@company.com" required>
+          <span class="error-message" id="error-message"></span>
+        </div>
+        <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+      </article>
+    </form>
+
+    <!-- Success state -->
+    <div class="subs-success" id="success-message">
+      <article>
+        <img src="./assets/images/icon-success.svg" alt="" class="icon">
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to <b id="user-email"></b>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </article>
+      <button class="btn subs-success-btn" id="dismiss-btn">Dismiss message</button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
